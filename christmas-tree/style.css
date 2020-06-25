@@ -10,7 +10,8 @@
 .main {
     width: 500px;
     height: 500px;
-    margin: auto;
+    position: absolute;
+    left: 500px;
     margin-top: 70px;
     align-self: center;
     background-color: rgb(0, 70, 128);
@@ -24,7 +25,7 @@
     height: 80px;
     background-image: radial-gradient(circle at center, white, rgb(232, 235, 98));
     box-shadow: inset 10px 0px rgba(140, 143, 115, 0.534);   
-    position: absolute;
+    position: fixed;
     top: 120px;
     left: 840px;
 }
@@ -92,7 +93,7 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    position: absolute;
+    position: fixed;
     z-index: 1;
 }
 
@@ -105,29 +106,29 @@
 .ball2 {
     top: 430px;
     left: 800px;
-    background-color: blue;
+    background-color: red;
 }
 
 .ball3 {
     top: 400px;
     left: 735px;
-    background-color: blue;
+    background-color: green;
 }
 
 .ball4 {
     top: 250px;
     left: 750px;
-    background-color: blue;
+    background-color: red;
 }
 
 .ball5 {
     top: 320px;
     left: 790px;
-    background-color: blue;
+    background-color: yellow;
 }
 
 .pedestal {
-    position: absolute;
+    position: fixed;
     height: 60px;
     width: 50px;
     top: 400px;
@@ -143,7 +144,7 @@
 	border-left: 100px solid transparent;
 	border-right: 100px solid transparent;
     border-bottom: 150px solid rgb(0, 255, 136);
-    position: absolute;
+    position: fixed;
     left: 665px;
     top: 310px;
 }
@@ -154,7 +155,7 @@
 	border-left: 90px solid transparent;
 	border-right: 90px solid transparent;
     border-bottom: 120px solid rgb(0, 255, 136);
-    position: absolute;
+    position: fixed;
     left: 675px;
     top: 250px;
 }
@@ -165,7 +166,7 @@
 	border-left: 70px solid transparent;
 	border-right: 70px solid transparent;
     border-bottom: 90px solid rgb(0, 255, 136);
-    position: absolute;
+    position: fixed;
     left: 695px;
     top: 200px;
 }
