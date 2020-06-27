@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(rgb(0, 195, 255), rgb(32, 105, 165));
+    background-image: linear-gradient(rgb(255, 166, 0), rgb(32, 105, 165));
 }
 
 @keyframes spin {
@@ -20,6 +20,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    margin-top: 50px;
     height: 300px;
     width: 450px;
     background-color: #b3b1b1;
@@ -44,8 +45,8 @@ body {
     bottom: 0;
     right: 0;
     margin: auto;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: #FFF;
     z-index: 3;
@@ -172,4 +173,31 @@ body {
     background-color: rgb(136, 132, 132);
     transform: rotate(-60deg);
     z-index: 2;
+}
+
+.library {
+    width: 600px;
+    height: 300px;
+    position: absolute;
+    top: 470px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 5px solid white;
+    margin-bottom: 50px;
+    background-image: radial-gradient(rgb(165, 72, 18), rgb(124, 41, 2));
+}
+
+.artist {
+    margin-top: 20px;
+}
+
+.song {
+    margin-top: 30px;
+}
+
+.text {
+    font-size: 8px;
+    text-align: center;
 }
