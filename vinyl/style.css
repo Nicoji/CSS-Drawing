@@ -1,5 +1,6 @@
 body {
-    background-image: linear-gradient(rgb(255, 166, 0), rgb(32, 105, 165));
+    background: #2069a5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes spin {
@@ -11,8 +12,9 @@ body {
     {
       transform: rotate(360deg);
     }
-  }
+}
 
+/* Vinyl */
 .disc-table {
     position: absolute;
     top: 0;
@@ -20,11 +22,23 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 70px;
     height: 300px;
     width: 450px;
     background-color: #b3b1b1;
     border-radius: 30px;
+    border: 2px solid;
+}
+
+.socle-disc {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #aa9f9f;
+    border: 5px solid #aa9f9f;
 }
 
 .disc {
@@ -49,7 +63,7 @@ body {
     height: 90px;
     border-radius: 50%;
     background-color: #FFF;
-    z-index: 3;
+    z-index: 1;
 }
 
 .line {
@@ -64,7 +78,7 @@ body {
     border-radius: 50%;
     background-color: transparent;
     border: 3px solid;
-    z-index: 2;
+    z-index: 1;
 }
 
 .point {
@@ -87,13 +101,14 @@ body {
     position: absolute;
     background-color: #36495d;
 }
-  .reflection-left {
+  
+.reflection-left {
     clip-path: polygon(50% 50%, 0 75%, 10% 100%);
-  }
-  .reflection-right {
-    clip-path: polygon(90% 0, 50% 50%, 100% 25%);
-  }
+}
 
+.reflection-right {
+    clip-path: polygon(90% 0, 50% 50%, 100% 25%);
+}
 
 .volume-bar {
     position: absolute;
@@ -101,7 +116,7 @@ body {
     right: 30px;
     height: 150px;
     width: 30px;
-    background-color: rgb(96, 100, 98);
+    background-color: #606462;
     border-radius: 10px;
 }
 
@@ -125,19 +140,33 @@ body {
 .button {
     border-radius: 50%;
     position: absolute;
+}
+
+.start-button {
+    background-color: #606462;
+    right: 120px;
     bottom: 20px;
     width: 30px;
     height: 30px;
+    border: 2px solid;
 }
 
 .first-button {
-    background-color: rgb(105, 95, 95);
+    background-color: rgb(211, 169, 30);
     right: 50px;
+    bottom: 30px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
 }
 
 .second-button {
-    background-color: rgb(65, 63, 63);
-    right: 100px;
+    background-color: rgb(221, 59, 47);
+    right: 80px;
+    bottom: 30px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
 }
 
 .block {
@@ -160,7 +189,7 @@ body {
     width: 150px;
     background-color: rgb(136, 132, 132);
     transform: rotate(-60deg);
-    z-index: 2;
+    z-index: 3;
 }
 
 .mouthpiece {
@@ -173,31 +202,4 @@ body {
     background-color: rgb(136, 132, 132);
     transform: rotate(-60deg);
     z-index: 2;
-}
-
-.library {
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    top: 470px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border: 5px solid white;
-    margin-bottom: 50px;
-    background-image: radial-gradient(rgb(165, 72, 18), rgb(124, 41, 2));
-}
-
-.artist {
-    margin-top: 20px;
-}
-
-.song {
-    margin-top: 30px;
-}
-
-.text {
-    font-size: 8px;
-    text-align: center;
 }
